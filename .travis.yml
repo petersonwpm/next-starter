@@ -5,10 +5,10 @@ script:
 - npm run build
 deploy:
   provider: releases
-  api_key:
+  token:
     secure: 0U3KD/qOEEP11NuYabmNnH3gsVrYbZDwz9zeHFrp0tzTCa9E/xgl8DUiH8p8sJuljdBorsjREDIdDMK8/LXfzWLy5v3w5No0mhvIk3x9APEViGc88LEGtBjN7j96hiwwG/n48g4uIw9qsjd+2w5WxyiM4Ul2pSrqgG2oLD2ubduFibxeBuh5JyDdVr+ozfbnByjfLEnR04HFYuXrhnohpWztBWxl7vFaJqtfE0uipkMnGJ85s62WWXFIf1vL8V24t3Tn8u55GZzcGAu6jWqGQIuDx2imnz+PhaMqIHdo2oJy1Bwfm0tih/uvoEB/ZwMghGfhrVokbhzZ8t6UBB/LYM8ihbD/+A8Z1Ht0tYqDW/GMiVYvpVe5aKP0GFHFNOrdCftuocRfF8XvFgM0ijiXu0NAn2qKPHajBxfv3EyiHJbBbhpIjKaAxKeFulufnweMaoJl58nqldp/MMWYtRwegSysz+Tthq1kRdpRd2eEyVVd6Otm2XFT7NQtWbf5TIu0livd2vrLisCLvIoItsCsfg2Zf3mcmi2xTYLUve2FB9jnhQa03uTTLn+7hsWyG9UoFEB2G2mZ5wU10AWgy9RdxaDKctVdYh0g9XzXpWdevIHx7UdKbWo6v1Z+giIxCY8mCXnAkjROF67ePTvUURa+bx/SfEV8o4LRKo9kE/Wsjns=
   file_glob: true
   file: **/*
   on:
     repo: petersonwpm/next-starter
-  skip_cleanup: 'true'
+  cleanup: 'true'
