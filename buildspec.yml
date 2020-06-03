@@ -20,12 +20,11 @@ artifacts:
   files:
     - appspec.yml
     - buildspec.yml
-    - .next
+    - .next/**/*
     - node_modules/**/*
     - package.json
     - package-lock.json
     - pages/**/*
     - public/**/*
-    - README.md
   discard-paths: no
 ...
