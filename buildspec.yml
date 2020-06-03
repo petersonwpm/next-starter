@@ -11,7 +11,8 @@ phases:
   pre_build:
     commands:
       - echo > .env
-      - echo 'PORT=9999' > .env
+      - echo 'PORT=9999' >> .env
+      - env >> .env
   build:
     commands:
       - echo 'Building nextJS'
