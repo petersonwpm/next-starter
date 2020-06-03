@@ -19,6 +19,7 @@ phases:
       - npm run build
 artifacts:
   files:
+    - .env
     - appspec.yml
     - buildspec.yml
     - .next/**/*
