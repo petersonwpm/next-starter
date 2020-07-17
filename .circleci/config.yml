@@ -13,13 +13,13 @@ jobs:
             - run: npm run build
             - run: npm test
             - run:
-              name: Creating Artifacts
-              command: |
-                mkdir /tmp/artifact
-                tar -cvf /tmp/artifact/next.tar .
+                name: Creating Artifacts
+                command: |
+                  mkdir /tmp/artifact
+                  tar -cvf /tmp/artifact/next.tar .
             - store_artifacts:
-              path: /tmp/artifact/next.tar
-              destination: artifact_name
+                path: /tmp/artifact/next.tar
+                destination: artifact_name
 workflows:
     build-and-test:
       jobs:
